@@ -1,7 +1,6 @@
 import React from 'react'
 import RouterView from './RouterView'
 import Main from "../views/main/index"
-import Home from "../views/main/home/index"
 export default {
     routes: [{
         path: '/login',
@@ -16,7 +15,7 @@ export default {
         </>),
         children: [{
             path: '/main/home',
-            component: ()=><Home></Home>
+            component: ()=><p>首页</p>
         },{
             path: '/main/topic',
             component: ()=><p>专题</p>
