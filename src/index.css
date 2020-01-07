@@ -7,6 +7,7 @@
 html,body,#root,div{
   width: 100%;
   height: 100%;
+  /* background: #c5c5c5; */
 }
 .App{
   width: 100%;
@@ -21,6 +22,7 @@ html,body,#root,div{
   height: 50px;
   display: flex;
   line-height: 50px;
+  background:#fff;
 }
 .App footer a{
   flex: 1;
@@ -45,7 +47,65 @@ html,body,#root,div{
 .channelWrap {
   width: 100%;
   height:77.28px;
-  padding: .1rem 0;
-  background: red;
+  padding: 5.52px 0;
   display: flex;
+  background:#fff;
+}
+.channelWrap li{
+  width:20%;
+  height:100%;
+}
+.channelWrap li img{
+  height:80%;
+  display: block;
+  padding:11.04px;
+  margin:auto;
+}
+.channelWrap li p{
+  height:20%;
+  font-size:13.248px;
+  text-align: center;
+  color:#000000;
+}
+.brand-box{
+  width:100%;
+  height:298.08px;
+  margin-top:10px;
+}
+.brand-title{
+  height: 55.2px;
+  background: #fff;
+  text-align: center;
+  font-size: 16.56px;
+  color:#000;
+  line-height: 55.2px;
+  font-weight: 700;
+}
+.brand-wrap{
+  width:100%;
+  height:242.88px;
+  display: flex;
+  flex-wrap: wrap
+}
+.brand-item{
+  width:50%;
+  height:121.44px;
+  position: relative;
+}
+.brand-item img{
+  width:100%;
+  height:100%;
+}
+.brand-item-name{
+  position: absolute;
+  top:11.04px;
+  left:11.04px;
+  font-size:16.56px;
+}
+.brand-item-minPrice{
+  position: absolute;
+  top:33.12px;
+  left:11.04px;
+  font-size:13.248px;
+  color:#a9a9a9;
 }

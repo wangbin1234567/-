@@ -1,5 +1,4 @@
 import React,{useEffect} from "react"
-
 import {useObserver} from "mobx-react-lite";
 import useStore from "../../utils/useStore"
 //icon组件
@@ -10,19 +9,18 @@ import useStore from "../../utils/useStore"
         
         useEffect( () => {
             home.getCarousel ();
-            console.log(home.iconList,'icon')
         },[])
         
         return useObserver( () =>( 
                 <div className="channelWrap">
                     {
-                        home.iconList.map( (item,index) => {
-                            return <>
+                        home.channel.map( (item,index) => {
+                            return (
                                 <li key={index}>
-                                    <img src={item.url} alt=""/>
+                                    <img src={item.icon_url} alt=""/>
                                     <p>{item.name}</p>
                                 </li>
-                            </>
+                            )
                         })
                     }
                 </div>
