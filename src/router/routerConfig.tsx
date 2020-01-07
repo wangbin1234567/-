@@ -16,7 +16,7 @@ export default {
         </>),
         children: [{
             path: '/main/home',
-            component: ()=><Home></Home>
+            component: ()=><div><Home></Home></div>
         },{
             path: '/main/topic',
             component: ()=><p>专题</p>

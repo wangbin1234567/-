@@ -4,7 +4,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-html,body,#root{
+html,body,#root,div{
   width: 100%;
   height: 100%;
 }
@@ -28,15 +28,24 @@ html,body,#root{
   color: #000;
   text-decoration: none;
 }
+.carouse-box{
+  height:220.8px;
+}
+.ant-carousel {
+  height:220.8px;
+}
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 220.8px;
-  line-height: 220.8px;
-  background: #364d79;
   overflow: hidden;
 }
-
 .ant-carousel .slick-slide img {
  height:220.8px;
  width:100%;
+}
+.channelWrap {
+  width: 100%;
+  height:77.28px;
+  padding: .1rem 0;
+  background: red;
+  display: flex;
 }
