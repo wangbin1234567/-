@@ -2,6 +2,7 @@ import React from 'react'
 import RouterView from './RouterView'
 import Main from "../views/main/index"
 import Home from "../views/main/home/index"
+import Category from "../views/category/index"
 export default {
     routes: [{
         path: '/login',
@@ -30,6 +31,9 @@ export default {
             path: '/main/mine',
             component: ()=><p>我的</p>
         }]
+    },{
+        path:`/category`,
+        component: Category
     },{
         from: '*',
         to: '/login'

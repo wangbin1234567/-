@@ -22,6 +22,7 @@ export default class HomeStore{
     @action 
     async getCarousel () {
         const res: any = await getCarousel()
+        // console.log(res)
         //轮播图       
         this.banner = res.banner
         //品牌

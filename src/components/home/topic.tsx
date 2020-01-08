@@ -12,7 +12,7 @@ import useStore from "../../utils/useStore"
         useEffect( () => {
             home.getCarousel ()
         },[])
-        
+    
         return useObserver( () =>
             <div className="topGoods-box">
                 <div className="topGoods-title">专题精选</div>
