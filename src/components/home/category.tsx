@@ -11,8 +11,33 @@ import useStore from "../../utils/useStore"
             home.getCarousel ()
         },[])
         
-        return useObserver( () => <>
-            
-        </>)
+        return useObserver( () => 
+            <div className="cateGory-box">
+                {
+                    home.categoryList.map((item,index)=>{
+                        return (
+                            <div className="cateGory-item" key={index}>
+                                <div className="cateGory-name">
+                                    {item.name}
+                                </div>
+                                <div className="cateGory-wrap">
+                                    {
+                                        item.goodsList.map( (good:any,goodIndex:any)=>{
+                                            return (
+                                                <div className="good-item" key={goodIndex}>
+                                                    <img src={good.list_pic_url} alt=""/>
+                                                    <div className="good-item-name">{good.name}</div>
+                                                    <div className="good-item-price">￥{good.retail_price}</div>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            </div>
+                        )
+                    })
+                }             
+            </div>
+        )
     }
   export default Category

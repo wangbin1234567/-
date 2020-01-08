@@ -16,14 +16,16 @@ import Topic from "../../../components/home/topic"
 import Category from "../../../components/home/category"
 
     const Example: React.FC = () => {       
-        return useObserver( () => <>
-           <Banner></Banner> 
-           <Channel></Channel>
-           <Brand></Brand>
-           <NewGoods></NewGoods>
-           <HotGoods></HotGoods>
-           <Topic></Topic>
-           <Category></Category>
-        </>)
+        return useObserver( () => 
+           <div className="home-box">
+                <Banner></Banner> 
+                <Channel></Channel>
+                <Brand></Brand>
+                <NewGoods></NewGoods>
+                <HotGoods></HotGoods>
+                <Topic></Topic>
+                <Category></Category>
+           </div>
+        )
     }
   export default Example

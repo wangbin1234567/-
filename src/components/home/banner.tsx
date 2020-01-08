@@ -13,7 +13,7 @@ import useStore from "../../utils/useStore"
             home.getCarousel ()
         },[])
         
-        return useObserver( () => <>
+        return useObserver( () => 
             <Carousel autoplay >
                 {
                     home.banner.map( (item,index) => {
@@ -25,6 +25,6 @@ import useStore from "../../utils/useStore"
                     })
                 }
             </Carousel>    
-        </>)
+      )
     }
   export default Banner

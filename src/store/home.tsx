@@ -18,7 +18,7 @@ export default class HomeStore{
     newGoodsList: newGoodsListType[] = [] //新品    
     @observable
     topicList: topicListType[] = [] //专题
-    
+   
     @action 
     async getCarousel () {
         const res: any = await getCarousel()
@@ -31,9 +31,9 @@ export default class HomeStore{
         //icon
         this.channel = res.channel
         //人气
-        this.hotGoodsList = res.hotGoodsList
+        this.hotGoodsList = res.hotGoodsList 
         //新品
-        this.newGoodsList = res.newGoodsList     
+        this.newGoodsList = res.newGoodsList   
         //专题
         this.topicList = res.topicList       
     }
