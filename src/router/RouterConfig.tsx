@@ -1,36 +1,57 @@
 import React from 'react'
 import RouterView from './RouterView'
 import Main from "../views/main/index"
+import Topic from '../views/main/topic/index'
+import Details from '../views/details/index'
+import More from '../views/more/index'
 export default {
-    routes: [{
-        path: '/login',
-        component: ()=><p>登陆页面</p>
-    },{
-        path: '/main',
-        component: (props:any)=>(<>
-           <div className="App">
-             <RouterView routes={props.routes}></RouterView> 
-             <Main />
-           </div>
-        </>),
-        children: [{
-            path: '/main/home',
-            component: ()=><p>首页</p>
-        },{
-            path: '/main/topic',
-            component: ()=><p>专题</p>
-        },{
-            path: '/main/catelog',
-            component: ()=><p>分类</p>
-        },{
-            path: '/main/cart',
-            component: ()=><p>购物车</p>
-        },{
-            path: '/main/mine',
-            component: ()=><p>我的</p>
-        }]
-    },{
-        from: '*',
-        to: '/login'
-    }]
+    routes: [
+        {
+            path: '/login',
+            component: ()=><h3>Welcome to  登录页面</h3>
+        },
+        {
+            path: '/main',
+            component: (props:any)=>(<>
+                <div className="App">
+                    <RouterView routes={props.routes}></RouterView> 
+                    <Main />
+                </div>
+            </>),
+            children: [
+                {
+                    path: '/main/home',
+                    component: ()=><div>首页</div>
+                },
+                {
+                    path: '/main/topic',
+                    component: ()=><div className="wrap-t"><Topic /></div>
+                },
+                {
+                    path: '/main/catelog',
+                    component: ()=> <div>分类</div>
+                },
+                {
+                    path: '/main/cart',
+                    component: ()=><div>购物车</div>
+                },
+                {
+                    path: '/main/mine',
+                    component: ()=><div>我的</div>
+                }
+            ]
+        },
+        {
+            path: '/details',
+            component: Details
+        },
+        {
+            path: '/more',
+            component: More
+        },
+        {
+            from: '*',
+            to: '/main/home'
+        }
+    ]
 }

@@ -14,7 +14,7 @@ html,body,#root{
   display: flex;
   flex-direction: column;
 }
-.App p{
+.App div{
   flex: 1;
 }
 .App footer{

@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap-t, div {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.listen img {
+  width: 100%;
+  height: 200px;
+}
+
+.listen p {
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px 5px;
+  font-size: 15px;
+}
+
+.listen .Subtitles {
+  width: 100%;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: grey;
+}
+
+.listen b {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-weight: normal;
+  padding: 5px 5px 10px;
+  color: red;
+  font-size: 14px;
+}
+
+.info_list {
+  width: 100%;
+  height: 10px;
+  background: #eeeeee;
+}

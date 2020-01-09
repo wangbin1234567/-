@@ -1,0 +1,40 @@
+:global{
+    .wrap-t,div{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    .listen{
+        img{
+            width: 100%;
+            height: 200px;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            padding: 10px 5px 5px;
+            font-size: 15px;
+        }
+        .Subtitles{
+            width: 100%;
+            text-align: center;
+            padding: 5px 10px;
+            font-size: 13px;
+            color: grey;
+        }
+        b{
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            font-weight: normal;
+            padding: 5px 5px 10px;
+            color: red;
+            font-size: 14px;
+        }
+    }
+    .info_list{
+        width: 100%;
+        height: 10px;
+        background: #eeeeee;
+    }
+}

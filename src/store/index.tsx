@@ -1,7 +1,9 @@
+ // eslint-disable-next-line
 import React from 'react'
 // 导入store
-import Cart from './cart'
+import Topic from './modules/Topic'
 
 export default {
-    cart: new Cart()
+    Topic: new Topic()
+
 }
