@@ -1,14 +1,19 @@
 import React,{useEffect} from "react"
 import {useObserver} from "mobx-react-lite";
 import useStore from "../../utils/useStore"
-//分类dnv
-    const Category: React.FC = () => {
+import {History} from "history"
+    interface hisProp {
+        history: History
+    }
+//分类nav
+    const Category: React.FC<hisProp> = (props) => {
 
         const store = useStore ()
         const {cate} = store;
-        
+        //接收传递过来的id
+        const id = props.history.location.state
         useEffect( () => {
-           cate.getCategory ()
+           cate.getCategory (id)
         },[])
         
         return useObserver( () =>(

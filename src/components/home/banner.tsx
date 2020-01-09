@@ -1,8 +1,7 @@
 import React,{useEffect} from "react"
-import "antd/dist/antd.css";
-import { Carousel } from 'antd';
 import {useObserver} from "mobx-react-lite";
 import useStore from "../../utils/useStore"
+import { Carousel, WingBlank } from 'antd-mobile';
 //轮播图组件
     const Banner: React.FC = () => {
 
@@ -14,17 +13,21 @@ import useStore from "../../utils/useStore"
         },[])
         
         return useObserver( () => 
-            <Carousel autoplay >
-                {
-                    home.banner.map( (item,index) => {
-                        return (                            
-                            <div key={index} className="carouse-box">
-                                <img src={item.image_url} alt=""/>
-                            </div>                                
-                        )
-                    })
-                }
-            </Carousel>    
+        <WingBlank>
+            <Carousel
+            autoplay={true}
+            infinite
+            >
+            {home.banner.map((item:any,index:number) => (
+                <img
+                    src={item.image_url}
+                    alt=""
+                    key={index}
+                    style={{ width: '100%', verticalAlign: 'top' }}
+                />
+            ))}
+            </Carousel>
+      </WingBlank>
       )
     }
   export default Banner

@@ -17,9 +17,7 @@ import useStore from "../../utils/useStore"
                     home.categoryList.map((item,index)=>{
                         return (
                             <div className="cateGory-item" key={index}>
-                                <div className="cateGory-name">
-                                    {item.name}
-                                </div>
+                                <div className="cateGory-name">{item.name}</div>
                                 <div className="cateGory-wrap">
                                     {
                                         item.goodsList.map( (good:any,goodIndex:any)=>{
