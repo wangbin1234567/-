@@ -1,0 +1,141 @@
+.maincont{
+    width: 100%;
+    height: 40px;
+    background: pink;
+    font-size: 12px;
+}
+.tabPageContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.maincont span{
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    line-height: 40px;
+}
+.maincont span .anticon-star{
+    margin-right: 10px;
+    color: red;
+}
+.cartGoodsListWrap{
+    width: 100%;
+    height: 100%;
+    flex:1;
+}
+.cartGoodsItem{
+    width: 100%;
+    height: 110px;
+    padding: 10px 10px 10px 0;
+    margin: 1px 0 0;
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+.isCheckItem{
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: -webkit-flex;
+}
+
+.isCheckItem .isCheckItem_img{
+   width: 19px;
+   height: auto;
+}
+.goodsImg{
+    width: 90px;
+    background: #eee;
+}
+.goodsImg .goodsImg_img{
+    width: 100%;
+}
+.cartGoodsMsg{
+    width: 218px;
+    padding: 0 4px;
+}
+.finish_cartGoodsMsg{
+    width: 235px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.cartGoodsMsg>div{
+    overflow: hidden;
+    height: 33.3%;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cartGoodsDo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-size: 15px;
+}
+.cartMsgAll{
+    width: 125.2px;
+    display: flex;
+    align-items: center;
+}
+.cartAllDoButton{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartAllDoButton.pay{
+    width: 130px;
+    background: #ab2b2b;
+    color: #fff;
+}
+.cartEditSizeName{
+    height: 50%;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: .2rem;
+}
+.cartEditNum{
+    height: 50%;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: .2rem;
+}
+.cartEditNumName{
+    display: flex;
+    margin-left: 75px;
+}
+.cartEditNum .cartEditNumName span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.cartEditNum .cartEditNumName b{
+    width: 50px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}

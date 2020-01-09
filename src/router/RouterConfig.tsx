@@ -1,6 +1,9 @@
 import React from 'react'
 import RouterView from './RouterView'
 import Main from "../views/main/index"
+import Cart from "../views/main/cart/index"
+import Goods from "../views/goods/index"
+console.log(Cart)
 export default {
     routes: [{
         path: '/login',
@@ -24,11 +27,14 @@ export default {
             component: ()=><p>分类</p>
         },{
             path: '/main/cart',
-            component: ()=><p>购物车</p>
+            component:Cart
         },{
             path: '/main/mine',
             component: ()=><p>我的</p>
         }]
+    },{
+        path:"/goods",
+        component: Goods
     },{
         from: '*',
         to: '/login'
