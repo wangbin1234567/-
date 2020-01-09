@@ -1,8 +1,8 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import {ItemType} from "../utils/types"
 import {observable, action, computed} from "mobx"
 import axios from 'axios';
-
+import {ShppingCart} from "../serveier/index"
 interface listNum {
     goodsCount:number,
     goodsAmount:number,
@@ -10,12 +10,10 @@ interface listNum {
     checkedGoodsAmount:number
 }
 export default class Shppingcart{
-    
     @observable
     list:ItemType[]=[]
     @observable
     listtotal:listNum={goodsCount:0,goodsAmount:0,checkedGoodsCount:0,checkedGoodsAmount:0}
-    
     @action
     setList(list:ItemType[],listtotal:listNum){
         list.forEach(item=>{
@@ -23,22 +21,20 @@ export default class Shppingcart{
         })
         this.list=list
         this.listtotal=listtotal
-       
-        // console.log('this.list------------------', this.list)
     }
     @computed
     get shoppingFalg(){
         return this.list.every(item=>item.checked)
     }
-    // @action
-    // checkedAll(){
-
-    // }
+    @action
+    async getData(){
+        let res= await ShppingCart()
+        console.log("门红帅",res)
+    }
     @action
     setListTotal(listtotal:listNum){
         this.listtotal=listtotal
     }
-
     @action
     checketreal(id:number,checked:number){
         checked===1?checked=0:checked=1
@@ -52,8 +48,6 @@ export default class Shppingcart{
             console.log('res老骥伏枥', res)
             this.list=res.data.data.cartList
             this.listtotal=res.data.data.cartTotal
-           
-            
         })
     }
 }

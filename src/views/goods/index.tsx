@@ -1,8 +1,12 @@
-import React from "react"
-import axios from 'axios';
+import React,{useEffect} from "react"
+import { useObserver } from 'mobx-react-lite';
+import ss from "../../utils/useStore"
 const Goods: React.FC = ()=>{
-    return <>
-            123
-    </>
+    useEffect(()=>{
+        
+    },[])
+    return useObserver(()=><>
+    123
+</>)
 }
 export default Goods

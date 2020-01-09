@@ -15,3 +15,8 @@ export interface ItemType{
     user_id:number,
     aaa:boolean
 }
+export interface XHRType{
+    errno: number,
+    errmsg: string,
+    data?: object
+}
