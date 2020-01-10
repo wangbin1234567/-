@@ -21,7 +21,7 @@ const Child: React.FC<PropType> = (props) => {
     }
 
     return useObserver(() => (
-        <div>
+        <div className="wrap-t">
             {
                 Topic.list.map((item,index) => {
                     return <li className="listen" key={index} onClick={() => {ClickTopic(item.id)}}>

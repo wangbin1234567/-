@@ -4,6 +4,7 @@ import Main from "../views/main/index"
 import Topic from '../views/main/topic/index'
 import Details from '../views/details/index'
 import More from '../views/more/index'
+import ADDList from '../views/addList/index'
 export default {
     routes: [
         {
@@ -25,7 +26,7 @@ export default {
                 },
                 {
                     path: '/main/topic',
-                    component: ()=><div className="wrap-t"><Topic /></div>
+                    component: Topic
                 },
                 {
                     path: '/main/catelog',
@@ -48,6 +49,10 @@ export default {
         {
             path: '/more',
             component: More
+        },
+        {
+            path: '/ADDList',
+            component: ADDList
         },
         {
             from: '*',

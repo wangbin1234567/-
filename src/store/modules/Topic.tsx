@@ -17,23 +17,22 @@ export default class CartStore{
     @action
     async getTopicList(obj:Object){
         const res:any = await getTopic(obj)
-        this.list = res.data     
+        this.list = res.data.data     
     }
     @action
     async getDetailList(id:number){
         const res:any = await getDetail(id);
-        this.DetaiList=[res]
+        this.DetaiList=[res.data]
     }
     @action
     async RelatedListen(id:number){
         const res:any = await getRelated(id);
-        this.RelatedList = res
+        this.RelatedList = res.data
     }
     @action
     async getListen(params:any){
         const res:any = await getList(params)
-        this.getListItem = res.data
-        // console.log(this.getListItem,'>>>????????-------');
+        this.getListItem = res.data.data
         
     }
 }

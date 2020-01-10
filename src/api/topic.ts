@@ -14,5 +14,5 @@ export let getRelated=(id:number)=>{
 }
 //留言
 export let getList=(params:any)=>{
-    return request.get('/comment/list',params)
+    return request.get('/comment/list',{params})
 }

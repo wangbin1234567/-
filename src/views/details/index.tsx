@@ -26,6 +26,9 @@ const Detail: React.FC<PropType> = (props) => {
     let MoreClick = () => {
         props.history.push('/more',state)
     }
+    let addList = () => {
+        props.history.push('/ADDList')
+    }
     return useObserver(() => (
         <div className="wrap-d">
                 {
@@ -42,7 +45,7 @@ const Detail: React.FC<PropType> = (props) => {
                                 <div className="ListFrom">
                                     <div className="ListFrom_title">
                                         <span>精选留言</span>
-                                        <span>✚</span>
+                                        <span onClick={() => {addList()}}>✚</span>
                                     </div>
                                     <div className="ListFrom_item">
                                         {
