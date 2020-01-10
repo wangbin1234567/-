@@ -14,7 +14,8 @@ import HotGoods from "../../../components/home/hotGoods"
 import Topic from "../../../components/home/topic"
 //引入列表组件
 import Category from "../../../components/home/category"
-
+//引入样式
+import "./home.module.scss"
     const Example: React.FC = () => {       
         return useObserver( () => 
            <div className="home-box">

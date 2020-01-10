@@ -21,20 +21,22 @@ import { Carousel, WingBlank } from 'antd-mobile';
                     frameOverflow="visible"
                     cellSpacing={10}
                     slideWidth={0.8}
-                    swipeSpeed = {12}
-                    autoplay
-                    infinite
+                    infinite={true}
                     >
-                    {home.topicList.map((item, index) => (                    
-                        <img key={index}
-                            src={item.item_pic_url}
-                            alt=""
-                            style={{ width: '100%', verticalAlign: 'top', height:'100px' }}
-                        />
-                    ))}
+                    {
+                        home.topicList.map((item, index) => (                    
+                            <img key={index}
+                                src={item.item_pic_url}
+                                alt=""
+                                style={{height:'220.8px' }}
+                            />                           
+                        ))
+                    }
                     </Carousel>
             </WingBlank>
             </div>
         )
     }
   export default Topic
+
+  

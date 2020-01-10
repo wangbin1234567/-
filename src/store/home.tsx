@@ -22,20 +22,19 @@ export default class HomeStore{
     @action 
     async getCarousel () {
         const res: any = await getCarousel()
-        // console.log(res)
         //轮播图       
-        this.banner = res.banner
+        this.banner = res.data.banner
         //品牌
-        this.brandList = res.brandList
+        this.brandList = res.data.brandList
         //列表
-        this.categoryList = res.categoryList
+        this.categoryList = res.data.categoryList
         //icon
-        this.channel = res.channel
+        this.channel = res.data.channel
         //人气
-        this.hotGoodsList = res.hotGoodsList 
+        this.hotGoodsList = res.data.hotGoodsList 
         //新品
-        this.newGoodsList = res.newGoodsList   
+        this.newGoodsList = res.data.newGoodsList   
         //专题
-        this.topicList = res.topicList       
+        this.topicList = res.data.topicList       
     }
 }

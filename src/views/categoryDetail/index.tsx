@@ -5,7 +5,7 @@ import {History} from "history"
     interface hisProp {
         history: History
     }
-//分类nav
+//icon列表详情
     const Category: React.FC<hisProp> = (props) => {
 
         const store = useStore ()

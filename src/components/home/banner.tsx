@@ -15,19 +15,20 @@ import { Carousel, WingBlank } from 'antd-mobile';
         return useObserver( () => 
         <WingBlank>
             <Carousel
-            autoplay={true}
-            infinite
-            >
-            {home.banner.map((item:any,index:number) => (
-                <img
-                    src={item.image_url}
-                    alt=""
-                    key={index}
-                    style={{ width: '100%', verticalAlign: 'top' }}
-                />
-            ))}
+                autoplay={true}
+                infinite={true}
+                dots={true} >
+                {
+                    home.banner.map((item: any, index: number) => (
+                        <img src={item.image_url}
+                            alt=""
+                            key={index}
+                            style={{ width: '100%', verticalAlign: 'top' }}
+                        />
+                    ))
+                }
             </Carousel>
-      </WingBlank>
+        </WingBlank>
       )
     }
   export default Banner
