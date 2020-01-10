@@ -1,0 +1,135 @@
+:global{
+    .header{
+        width: 100%;
+        height: 40px;
+        display: flex;
+    }
+    .header_left,.header_right{
+        width: 7%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_cont{
+        width: 86%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+    .am-wingblank{
+        width: 100%;
+        height: 350px;
+        // overflow: hidden;
+    }
+    .am-carousel{
+        width: 100%;
+        height: 100%!important;
+        .slider-frame{
+            width: 100%;
+        height: 100%!important;
+        }
+    }
+    .imgs{
+        height: 350px;
+        width: 100%;
+    }
+    .goodsMsgWrap{
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        .goodsNameTitle{
+            font-size: 20px;
+        }
+    }
+    .goodsPriceTitle{
+        font-size: 25px;
+        color: red;
+        height: 49px;
+        line-height: 49px;
+    }
+    .goodsBrandTitle{
+        text-align: center;
+        div{
+            font-size: 12px;
+            padding: 5px;
+            color: orange;
+            width: auto;
+            display: inline;
+            border-radius: 5px;
+            border: 1px solid orange;
+        }
+    }
+    .goodsSize{
+        padding: 0 20px;
+        height: 50px;
+        display: flex;
+        font-size: 15px;
+        div:first-child{
+            flex: 1;
+        }
+        div:nth-child(2){
+           line-height: 50px;
+           text-align: center;
+           padding: 0 3px;
+           color: red;
+           font-weight: 600;
+        }
+        div:nth-child(3){
+            line-height: 50px;
+           text-align: center;
+           padding: 0 3px;
+        }
+    }
+    .goodsComment{
+        margin-top: 15px;
+        .goodsCommentTitle{
+            padding: 0 20px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            div:nth-child(1){
+                flex: 1;
+
+            }
+            div:nth-child(2){
+            }
+        }
+    }
+    .commentList{
+        padding: 0 10px;
+        
+    }
+    .commentItem{
+        width: 100%;
+        height: auto;
+        position: relative;
+        background: #fff;
+        color: grey;
+        padding-bottom: .1rem;
+    }
+    .userInfo{
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        font-weight: 600;
+        div:nth-child(1){
+            flex: 1;
+        }
+    }
+    .userComment{
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .commentPicList{
+        display: flex;
+    }
+}

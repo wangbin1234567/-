@@ -31,18 +31,18 @@ export interface Names {
 
 
 
-// export interface DetailsAll{
-//     info:Detailsinfo
-//     gallery:Array<Detailsgallery>
-//     attribute:Array<Detailsattribute>
-//     userHasCollect:number
-//     issue:Array<Detailsissue>
-//     comment:Detailscomment
-//     brand:Detailsbrand
-//     productList:DetailsproductList
-//     specificationList:[]
-// }
-export interface Detailsinfo {
+export interface DetailsAll{
+    info:Detailsinfo
+    gallery:Array<Detailsgallery>
+    // attribute:Array<Detailsattribute>
+    // userHasCollect:number
+    // issue:Array<Detailsissue>
+    comment:Detailscomment
+    brand:Detailsbrand
+    // productList:DetailsproductList
+    // specificationList:[]
+}
+ interface Detailsinfo {
     id: number
     category_id: number
     goods_sn: string
