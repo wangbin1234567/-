@@ -33,7 +33,7 @@ export default {
             component: ()=><p>我的</p>
         }]
     },{
-        path:"/goods",
+        path:"/goods/:id?",
         component: Goods
     },{
         from: '*',
