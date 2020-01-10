@@ -1,8 +1,19 @@
 import React from 'react'
 import RouterView from './RouterView'
 import Main from "../views/main/index"
+import Catelog from "../views/main/catelog/index"
+import Categorys from "../views/categorys/index"  
+import GoodsSearch from "../views/goodsSearch/index"  
 export default {
     routes: [{
+        path: "/goodsSearch",
+        component: GoodsSearch
+    },
+    {
+      path: "/categorys/:id",
+      component: Categorys
+     },
+        {
         path: '/login',
         component: ()=><p>登陆页面</p>
     },{
@@ -15,19 +26,19 @@ export default {
         </>),
         children: [{
             path: '/main/home',
-            component: ()=><p>首页</p>
+            component: ()=><div>首页</div>
         },{
             path: '/main/topic',
-            component: ()=><p>专题</p>
+            component: ()=><div>专题</div>
         },{
             path: '/main/catelog',
-            component: ()=><p>分类</p>
+            component: Catelog
         },{
             path: '/main/cart',
-            component: ()=><p>购物车</p>
+            component: ()=><div>购物车</div>
         },{
             path: '/main/mine',
-            component: ()=><p>我的</p>
+            component: ()=><div>我的</div>
         }]
     },{
         from: '*',
