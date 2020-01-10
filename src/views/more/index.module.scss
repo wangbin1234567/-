@@ -1,0 +1,56 @@
+:global{
+    .list_Item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        div{
+            width: 100%;
+            display: flex;
+            span:first-child{
+                width: 10%;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            p{
+                width: 90%;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    main{
+        flex: 1;
+        overflow: auto;
+        li{
+            width: 100%;
+            height: 75px;
+            border-top: 1px solid #ccc;
+            p{
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                display: flex;
+                justify-content: space-between;
+                span:nth-child(2){
+                    color: #808080;
+                }
+            }
+            .first{
+                width: 90%;
+                height: 34px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 34px;
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@ import axios from "axios"
 import {AxiosResponse} from "axios"
 import {XHRType} from "./types"
 const instance = axios.create({
-    baseURL: 'http://169.254.160.213:8888',
+    baseURL: '//169.254.160.213:8888',
     timeout: 1000,
     headers: {'x-nideshop-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNiwiaWF0IjoxNTc4NDY3MzkyfQ.lgny3Bm0_Bh1WD71y7efEZeHUrBcntdQ5M_z8a2FQss'}
 });

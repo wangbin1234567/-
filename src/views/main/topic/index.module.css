@@ -1,0 +1,41 @@
+:global .wrap-t {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+:global .listen img {
+  width: 100%;
+  height: 200px;
+}
+
+:global .listen p {
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px 5px;
+  font-size: 15px;
+}
+
+:global .listen .Subtitles {
+  width: 100%;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: grey;
+}
+
+:global .listen b {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-weight: normal;
+  padding: 5px 5px 10px;
+  color: red;
+  font-size: 14px;
+}
+
+:global .info_list {
+  width: 100%;
+  height: 10px;
+  background: #eeeeee;
+}

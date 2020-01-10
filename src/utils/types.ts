@@ -129,3 +129,4 @@ interface Detailspiclist {
     pic_url: string
     sort_order: number
 }
+
