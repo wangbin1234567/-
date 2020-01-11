@@ -25,7 +25,7 @@ export default class Shppingcart {
     }
     @computed
     get shoppingFalg() {
-        return this.list.every(item => item.checked)
+        return this.list.every(item =>item.checked)
     }
     @action
     async remove() {

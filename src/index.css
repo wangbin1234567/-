@@ -5,10 +5,12 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html,body,#root{
   width: 100%;
   height: 100%;
 }
+
 .App{
   width: 100%;
   height: 100%;
@@ -16,18 +18,23 @@ html,body,#root{
   flex-direction: column;
   overflow: hidden;
 }
+
 .App>div{
-  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
-.App footer{
+
+.App>footer{
   height: 50px;
   display: flex;
   box-shadow: 0 0 6px 10px rgba(0,0,0,.05);
   z-index: 99;
 }
-.App footer>a{
-  display: block;
-  height: 100%;
+
+.App footer a{
   flex: 1;
   text-align: center;
   color: #000;

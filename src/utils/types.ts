@@ -1,6 +1,6 @@
 //购物车内容
 export interface ItemType {
-    checked: number;
+    checked: any,
     goods_id: number,
     goods_name: string,
     goods_sn: string,
@@ -15,6 +15,9 @@ export interface ItemType {
     session_id: string,
     user_id: number,
     aaa: boolean
+}
+interface adds {
+    
 }
 //axios 数据
 export interface XHRType {

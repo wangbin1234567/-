@@ -1,0 +1,217 @@
+:global{
+    .App>div>.home-box{
+        flex: 1;
+        height:auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background:#c5c5c5;
+      }
+      
+      .channelWrap {
+        width: 100%;
+        height:77.28px;
+        padding: 5.52px 0;
+        display: flex;
+        background:#fff;
+      }
+      .channelWrap li{
+        width:20%;
+        height:100%;
+      }
+      .channelWrap li img{
+        height:80%;
+        display: block;
+        padding:11.04px;
+        margin:auto;
+      }
+      .channelWrap li p{
+        height:20%;
+        font-size:13.248px;
+        text-align: center;
+        color:#000000;
+      }
+      .brand-box{
+        width:100%;
+        height:298.08px;
+        margin-top:11.04px;
+        background:#fff;
+      }
+      .brand-title,.newGoods-title,.hotBoods-title,.topGoods-title{
+        height: 55.2px;
+        background: #fff;
+        text-align: center;
+        font-size: 16.56px;
+        color:#000;
+        line-height: 55.2px;
+        font-weight: 700;
+      }
+      .brand-wrap{
+        width:100%;
+        height:242.88px;
+        display: flex;
+        flex-wrap: wrap
+      }
+      .brand-item{
+        width:50%;
+        height:121.44px;
+        position: relative;
+      }
+      .brand-item img{
+        width:100%;
+        height:100%;
+      }
+      .brand-item-name{
+        position: absolute;
+        top:11.04px;
+        left:11.04px;
+        font-size:16.56px;
+      }
+      .brand-item-minPrice{
+        position: absolute;
+        top:33.12px;
+        left:11.04px;
+        font-size:13.248px;
+        color:#a9a9a9;
+      }
+      .newGoods-box{
+        width:100%;
+        height:496.8px;
+        margin-top:11.04px;
+        background:#fff;
+      }
+      .newGoods-wrap{
+        width:100%;
+        height:441.6px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .newGoods-item{
+        width:50%;
+        height:220.8px;
+      }
+      .newGoods-item img{
+        height:70%;
+        width:100%;
+      }
+      .newGoods-item .newGoods-item-name{
+        height:15%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size:16.56px;
+      }
+      .newGoods-item .newGoods-item-minPrice{
+        height:15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:16.56px;
+        color:#8b0000;
+      }
+      .hotBoods-box{
+        width:100%;
+        height:552px;
+        margin-top:11.04px;
+        background:#fff;
+      }
+      .hotBoods-wrap{
+        width:100%;
+        height:496.8px;
+        padding:0 11.04px;
+      }
+      .hotBoods-item{
+        height:165.6px;
+        position: relative;
+        padding:5.52px 0;
+        display: flex;
+        border-top:1px solid #ccc;
+      }
+      .hotBoods-item img{
+        opacity: 1;
+        transition: all 1s;
+        width:auto;
+        height:100%;
+      }
+      .hotBoods-item .hotBoods-infos{
+        flex:1;
+        padding:27.6px 0;
+      }
+      .hotBoods-item .hotBoods-infos .hotBoods-item-name{
+        height:33.33%;
+        display: flex;
+        align-items: center;
+        font-size:17.664px;
+        color:#000;
+      }
+      .hotBoods-item .hotBoods-infos .hotBoods-item-info{
+        height:33.33%;
+        display: flex;
+        align-items: center;
+        color:#a9a9a9;
+        font-size:15.456px;
+      }
+      .hotBoods-item .hotBoods-infos .hotBoods-item-price{
+        height:33.33%;
+        display: flex;
+        align-items: center;
+        color:#8b0000;
+        font-size:16.56px;
+      }
+      .topGoods-box{
+        width:100%;
+        height:344.24px;
+        margin-top:11.04px;
+        background:#fff;
+      }
+      .cateGory-box{
+        height:auto;
+        width:100%;
+      }
+      .cateGory-name{
+        height: 55.2px;
+        background: #fff;
+        text-align: center;
+        font-size: 16.56px;
+        color:#000;
+        line-height: 55.2px;
+        font-weight: 700;
+        background:#c5c5c5;
+      }
+      .cateGory-item{
+        height:auto;
+        width:100%;
+      }
+      .cateGory-wrap{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .good-item{
+        width:50%;
+        height:261.26px;
+        background:#fff;
+        /* padding:11.04px; */
+        position: relative;
+      }
+      .good-item img{
+        width:100%;
+        height:186.73px;
+      }
+      .good-item-name{
+        height:37.26px;
+        text-align: center;
+        font-size:16.56px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-bottom:16.56px;
+        padding-top:5.52px;
+      }
+      .good-item-price{
+        height: 15.2px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color:red;
+      }
+}

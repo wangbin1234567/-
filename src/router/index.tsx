@@ -1,6 +1,6 @@
 import React from 'react';
 import RouterView from './RouterView'
-import config from './RouterConfig'
+import config from './routerConfig'
 import {BrowserRouter} from 'react-router-dom'
 
 export default ()=>{

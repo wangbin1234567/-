@@ -23,7 +23,7 @@ const Child: React.FC<PropType> = (props) => {
     return useObserver(() => (
         <div className="wrap-t">
             {
-                Topic.list.map((item,index) => {
+                Topic.list.map((item:any,index:any) => {
                     return <li className="listen" key={index} onClick={() => {ClickTopic(item.id)}}>
                         <img src={item.scene_pic_url} alt=""/>
                         <p>{item.title}</p>
