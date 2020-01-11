@@ -1,0 +1,120 @@
+:global{
+.catelog{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+} 
+.top{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+    z-index: 99;
+    .searchInput{
+    width: 90%;
+    height: 70%;
+    background: #ededed;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    }
+} 
+.bottom{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.bottom .left{
+    // flex: 2.6;
+   width: 100px;
+   height: 100%;
+   border-right: 1px solid #f2f2f6;
+}
+.bottom .right{
+    // flex: 7.4;
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+}
+.left ul{
+    padding: 0 8px;
+}
+.left ul li{
+    width: 100%;
+    height: 43px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 43px;
+}
+.left ul li.active{
+    color: #108ee9;
+}
+.left ul.active{
+    border-left: 2px solid #108ee9;
+    padding-left: 6px;
+}
+.right .categoryWrap{
+   width: 100%;
+   height: 100px;
+   text-align: center;
+   line-height: 100px;
+   color: #fff;
+   background-size: 100% 100%;
+   font-size: 15px;
+} 
+.right .categoryTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2196f3;
+    font-size: 14px;
+    background: #fff;
+    padding: 10px;
+}
+.right .categoryTitle>div {
+        width: 20px;
+        height: 1px;
+        background: #2196f3;
+        margin: 0 10px;
+}
+.right .subCategory{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px 10px;
+}
+.right .subCategory .subCategoryItem{
+    // width: 128px;
+     width: 50%;
+     height: 150px;
+ }
+ .right .subCategory .subCategoryItem img{
+    // width: 128px;
+    width: 100%;
+    height: 128px;
+    padding: 10px;
+}
+.right{
+    .subCategory{
+        .subCategoryItem{
+            .subCategoryItemName{
+                // width: 128px;
+                width: 100%;
+                height: 16px;
+                font-size: 14px;
+                padding: 1px 0;
+                text-align: center;
+                line-height: 16px;
+            }
+        }
+    }
+}
+}

@@ -7,9 +7,19 @@ import ADDList from '../views/addList/index'
 import Main from "../views/main/index"
 import Cart from "../views/main/cart/index"
 import Goods from "../views/goods/index"
-console.log(Cart)
+import Catelog from "../views/main/catelog/index"
+import Categorys from "../views/categorys/index"  
+import GoodsSearch from "../views/goodsSearch/index"  
 export default {
     routes: [{
+        path: "/goodsSearch",
+        component: GoodsSearch
+    },
+    {
+      path: "/categorys/:id",
+      component: Categorys
+     },
+        {
         path: '/login',
         component: () => <p>登陆页面</p>
     }, {
@@ -26,15 +36,15 @@ export default {
         }, {
             path: '/main/topic',
             component: Topic
-        }, {
-            path: '/main/catelog',
-            component: () => <p>分类</p>
-        }, {
+        },{
             path: '/main/cart',
             component: Cart
         }, {
             path: '/main/mine',
-            component: () => <p>我的</p>
+            component: () => <div>我的</div>
+        },{
+            path: '/main/catelog',
+            component: Catelog
         }]
     }, {
         path: "/goods/:id?",
@@ -58,57 +68,3 @@ export default {
 
 
 }
-// export default {
-//     routes: [
-//         {
-//             path: '/login',
-//             component: ()=><h3>Welcome to  登录页面</h3>
-//         },
-//         {
-//             path: '/main',
-//             component: (props:any)=>(<>
-//                 <div className="App">
-//                     <RouterView routes={props.routes}></RouterView> 
-//                     <Main />
-//                 </div>
-//             </>),
-//             children: [
-//                 {
-//                     path: '/main/home',
-//                     component: ()=><div>首页</div>
-//                 },
-//                 {
-//                     path: '/main/topic',
-//                     component: Topic
-//                 },
-//                 {
-//                     path: '/main/catelog',
-//                     component: ()=> <div>分类</div>
-//                 },
-//                 {
-//                     path: '/main/cart',
-//                     component: ()=><div>购物车</div>
-//                 },
-//                 {
-//                     path: '/main/mine',
-//                     component: ()=><div>我的</div>
-//                 }
-//             ]
-//         },
-//         {
-//             path: '/details',
-//             component: Details
-//         },
-//         {
-//             path: '/more',
-//             component: More
-//         },
-//         {
-//             path: '/ADDList',
-//             component: ADDList
-//         },
-//         {
-//             from: '*',
-//             to: '/main/home'
-//         }
-//     ]

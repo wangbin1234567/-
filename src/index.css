@@ -3,11 +3,7 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  user-select: none;
-}
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
 }
 html,body,#root{
   width: 100%;
@@ -18,6 +14,7 @@ html,body,#root{
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .App>div{
   flex: 1;
@@ -25,11 +22,23 @@ html,body,#root{
 .App footer{
   height: 50px;
   display: flex;
-  line-height: 50px;
+  box-shadow: 0 0 6px 10px rgba(0,0,0,.05);
+  z-index: 99;
 }
-.App footer a{
+.App footer>a{
+  display: block;
+  height: 100%;
   flex: 1;
   text-align: center;
   color: #000;
-  text-decoration: none;
+}
+.App footer>a .itemIcon{
+   height: 32px;
+   line-height: 32px;
+}
+.App footer>a .itemName{
+  height: 18px;
+}
+.App footer>a.active{
+  color: #2196f3;
 }
