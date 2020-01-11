@@ -53,7 +53,7 @@ export default {
         component: ADDList
     }, {
         from: '*',
-        to: '/login'
+        to: '/main/home'
     }]
 
 

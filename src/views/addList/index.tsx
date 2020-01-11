@@ -6,7 +6,7 @@ const ADD:React.FC = () => {
     return <div className="wrap_list">
         123
         <header>
-
+            123
         </header>
         <main>
             45

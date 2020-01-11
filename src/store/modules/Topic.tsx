@@ -11,7 +11,7 @@ export default class CartStore{
     @observable
     RelatedList: specialType[] = []//专题相关
     @observable
-    getListItem: specialType[] = []
+    getListItem: specialType[] = []//留言
 
     //请求数据的方法
     @action

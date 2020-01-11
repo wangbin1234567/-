@@ -8,5 +8,4 @@ export default {
     Particulars: new Particulars(),
     Topic: new Topic()
 // 导入store
-
 }
